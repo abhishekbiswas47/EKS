@@ -25,4 +25,4 @@ spec:
       volumes:
       - name: abhishek_storage
         persistentVolumeClaim:
-          claimName: abhishek
+          claimName: abhishekpvc

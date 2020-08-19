@@ -173,6 +173,7 @@ To run the above code run this command-
 ```
 kubectl create -f wordpress.yml
 ```
+##### Now browse the load balancer IP to go to the wordpress site.
 ##  Summary of the task in brief-:
 
 
@@ -199,3 +200,4 @@ kubectl create -f wordpress.yml
 
 ##### Now we have to update the config file of Kubernetes to use aws, so that we can use cluster from local system. use command for update file:      
       aws eks update-kubeconfig --name cluster-name
+> Thanks for reading...

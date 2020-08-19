@@ -48,3 +48,7 @@ nodeGroups:
     ssh:
       publicKeyName: abhishek
 ```
+To create cluster using above code run the command : 
+```
+eksctl create cluster -f file.yml
+```

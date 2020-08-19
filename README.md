@@ -26,3 +26,24 @@
 
 ##### Now we have to update the config file of Kubernetes to use aws, so that we can use cluster from local system. use command for update file:      
       aws eks update-kubeconfig --name cluster-name
+```
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: ekscluster
+  region: ap-south-1
+nodeGroups:
+  - name: ng1
+    desiredCapacity: 2
+    instanceType: t2.micro
+    ssh:
+      publicKeyName: abhishek
+  - name: ng2
+    desiredCapacity: 2
+    instanceType: t2.small
+    ssh:
+      publicKeyName: abhishek
+    ssh:
+      publicKeyName: abhishek
+```

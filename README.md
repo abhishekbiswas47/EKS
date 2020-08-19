@@ -26,6 +26,7 @@
 
 ##### Now we have to update the config file of Kubernetes to use aws, so that we can use cluster from local system. use command for update file:      
       aws eks update-kubeconfig --name cluster-name
+### To create EKS Cluster
 ```
 
 apiVersion: eksctl.io/v1alpha5

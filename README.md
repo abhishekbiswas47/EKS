@@ -12,6 +12,9 @@ EKS runs upstream Kubernetes and is certified Kubernetes conformant so you can l
 2. EKS is deeply integrated with services such as Amazon CloudWatch, Auto Scaling Groups, AWS Identity and Access Management (IAM), and Amazon Virtual Private Cloud (VPC), providing a seamless experience to monitor, scale, and load-balance your applications.
 3. EKS integrates with AWS App Mesh and provides a Kubernetes native experience to consume service mesh features and bring rich observability, traffic controls and security features to applications.
 4. EKS provides a scalable and highly-available control plane that runs across multiple availability zones to eliminate a single point of failure.
+
+
+
 For making this whole process easy and fast we will use “eksctl” commend. This command provides us automation for deploying our cluster. And this command use cloudformation service of AWS for making our cluster. That is why we need to install ‘eksctl’ software and for using this software command in CLI we must provide the path of this software in environment variables.
 ### To create EKS Cluster
 ```

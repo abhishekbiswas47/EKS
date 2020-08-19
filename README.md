@@ -85,6 +85,10 @@ spec:
           
           claimName: efs-mysql
 ```
+To run the above code run this command-
+```
+kubectl create -f mysql.yml
+```
 ### To create wordpress deployment
 ```
 
@@ -148,6 +152,10 @@ spec:
   type: LoadBalancer
 ```
 
+To run the above code run this command-
+```
+kubectl create -f wordpress.yml
+```
 ##  Summary of the task in brief-:
 
 

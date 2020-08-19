@@ -129,6 +129,25 @@ spec:
         persistentVolumeClaim:
           claimName: efs-wordpress
 ```
+### For load balancer service-
+```
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+  labels:
+    app: wordpress
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: wordpress
+    tier: frontend
+  
+  type: LoadBalancer
+```
+
 ##  Summary of the task in brief-:
 
 
@@ -136,9 +155,9 @@ spec:
 
 ### Steps:
 
-#### 1.Download the AWS CLI program, add it to path variables and configure it to use AWS using the command - aws configure --profile Admin. As terraform will also be using the same credentials for contacting AWS.
+#### 1. Download the AWS CLI program, add it to path variables and configure it to use AWS using the command - aws configure --profile Admin. As terraform will also be using the same credentials for contacting AWS.
 
-#### 2.Write terraform code for deploying a Kubernetes cluster on AWS using EKS.
+#### 2. Write terraform code for deploying a Kubernetes cluster on AWS using EKS.
 
 #### 3.  Inside the cluster resource specify the name of the cluster, VPC inside which the cluster has to be launched, here I have used the ID's of the pre-created default subnet inside the default VPC. But you can also create your own VPC and subnets, define your own rules and use them.
 
